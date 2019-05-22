@@ -23,12 +23,14 @@ g = Process(target=girl)
 m.start()
 g.start()
 
+for i in range(5):
+    print(i)
+
 m.join()
 g.join()
 
 #　获取共享内存值
 print("一月余额:",money.value)
-
 
 
 
